@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Top Programming Languages </title>
+
+    <!-- external links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <style>
+        .paragraph a
+        {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2E9CCA;
+        }
+        .topProgLang
+        {
+            background-image: url("https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media(max-width: 1049px)
+        {
+            .topProgLang
+            {
+                height: 380px;
+            }
+        }
+        @media(max-width: 750px)
+        {
+            .topProgLang
+            {
+                height: 280px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <!-- background image -->
+    <div class="topProgLang"></div>
+
+    <div class="description">
+        <!-- heading -->
+        <h1 class="heading">
+            career in web development
+        </h1>
+
+        <!-- briefly about web development -->
+        <p class="paragraph">
+            Working as a Web developer is something like playing a sport with a continuously changing set of rules. One minute you’re charging down the field at full throttle, and then suddenly the rules change and you need to readjust your strategy -- fast -- or find yourself benched.
+            <br><br>
+            Successful Web developers -- at least, those who enjoy their work -- thrive in this topsy-turvy environment, reveling in the ever-evolving nature of Web development. Web 2.0, mashups, Ajax, audio and video all provide ample fodder for active brains -- even if it means difficult technical skills mastered over the years may be in-demand one moment, close-to-worthless the next.
+            <br><br>
+            “The Web is still the Wild West in many aspects,” says Adrian Holovaty, who writes a blog about Web development and serves as editor of editorial innovations at Washingtonpost.Newsweek Interactive. “I love the fact the rules haven’t yet been set in stone and that new techniques and technologies come along all the time.”
+            <br><br>
+            Web developers need to have broad-based knowledge, encompassing areas such as:
+            <br>
+            <i>
+                1. Usability and interface design. <br>
+                2. Basic Web skills, such as HTML, CSS and JavaScript. <br>
+                3. Web 2.0 skills, including Ajax. <br>
+                4. Server-side technologies, such as ASP, PHP and Ruby on Rails. <br>
+                5. Databases such as MySQL, SQL Server, Oracle or IBM’s DB2. <br>
+                6. Online marketing and search engine optimization.
+            </i>
+            <br><br>
+            Today’s Web developers typically have at least a bachelor’s degree, even if they have gained much of their know-how from on-the-job experience. To break into the field, you need to demonstrate you can create Web sites and services. “Build a Web application for fun,” suggests Holovaty. “The best way to learn is if you’re applying your new skills to something that you genuinely want to do.”
+            <br><br>
+            Other key skills include tasks like gathering requirements and working with clients to review prototypes and designs. “If a developer can keep a good attitude, ask lots of questions, gather requirements, set the customer's expectations and handle all the little project things that come up -- they’re much more valuable to me than the antisocial ubergeek who never emerges from his cave and scowls at all mere mortals,” says Myer.      
+
+        </p>
+
+
+    </div>
+
+    <div class="blank"></div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>  </title>
+
+    <!-- external links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+</head>
+<body>
+   
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <!-- background image -->
+    <div class="indexImage"></div>
+
+    <div class="description">
+        <!-- heading -->
+        <h1 class="heading">
+            web development career
+        </h1>
+
+        <!-- briefly about web development -->
+        <p class="paragraph">
+            A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications using a client–server model. The applications typically use HTML, CSS and JavaScript in the client, PHP, ASP.NET (C#) or Java in the server, and http for communications between client and server. A web content management system is often used to develop and maintain web applications.
+            <br><br>
+            There are no formal educational or licensure requirements to become a web developer. However, many colleges and trade schools offer coursework in web development. There are also many tutorials and articles, which teach web development, freely available on the web - for example: Basic JavaScript
+            <br><br>
+            Even though there are no formal educational requirements, dealing with web developing projects requires those who wish to be referred to as web developers to have advanced knowledge/skills in:
+            <br>
+            <i>
+            1. HTML/XHTML, CSS, JavaScript and jQuery. <br>
+            2. Server/client side architecture like all or some of the above mentioned. <br>
+            3. Programming/Coding/Scripting in one of the many server-side languages or frameworks (e.g., Perl, Python, Ruby, PHP, Go, CFML - ColdFusion, Java, ASP, ASP.NET, Node.js) <br>
+            4. Ability to utilize a database <br>
+            5. Creating single-page application with use of front-end tools such as EmberJS, ReactJS or AngularJS <br>
+            </i>
+            <br><br>
+            As a web developer, you create beautiful, secure and interactive websites for people, organizations, and businesses. 
+            <br><br>
+            With web development skills, you could be a:
+            <br>
+            <i>
+                a) Front-end Developer <br>
+                b) Full Stack Engineer <br>
+                c) Software Engineer <br>
+                d) Back-End Engineer <br>
+                e) Senior Web Developer
+            </i>
+            <br><br>
+
+            Some skills of a front-end web developer: <br>
+            <i>
+                HTML & CSS, Bootstrap, JavaScript, jQuery, HTML5 Canvas, Critical Rendering Path, 60FPS Rendering, JavaScript Web App Frameworks (Knockout), JavaScript Testing Frameworks (Jasmine), Object-Oriented Programming, Chrome Developer Tools
+            </i>
+            <br><br>
+
+            Some skills of a full stack web developer: <br>
+            <i>
+                    HTML & CSS, JavaScript, Python, RDBMS, SQL, MySQL, PostgreSQL, Flask, Google App Engine, SSH, Ubuntu Config, UFW (Uncomplicated Firewall) Config, Apache Config, PostgreSQL Config, OAuth2, Google Accounts API, Facebook Connect API
+            </i>
+        </p>
+
+
+    </div>
+
+    <!-- 9 topics -->
+    <div class="box">
+
+        
+        <div class="boxImage">
+            <a href="topProgrammingLanguages.html">
+                <img src="/img/top-language.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> top programming languages </h1>
+            </a>
+        </div>
+        
+        <div class="boxImage">
+            <a href="demand.html">
+                <img src="/img/demand.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> demand of web development </h1>
+            </a>
+        </div>    
+
+        <div class="boxImage">
+            <a href="career.html">
+                <img src="/img/career.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> career in web development </h1>
+            </a>
+        </div>    
+
+        <div class="boxImage">
+            <a href="jobPrepared.html">
+                <img src="/img/job-prepared.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> how to get job prepared </h1>
+            </a>
+        </div>
+           
+        <div class="boxImage">
+            <a href="howLongItTakes.html">
+                <img src="/img/how-long-it-takes.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> how long it takes </h1>
+            </a>
+        </div>    
+
+        <div class="boxImage">
+            <a href="importanceOfWD.html">
+                <img src="/img/importance.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> why web development is important </h1>
+            </a>
+        </div>    
+        
+        <div class="boxImage">
+            <a href="frontend.html">
+                <img src="/img/frontend.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> front-end developer role </h1>
+            </a>
+        </div>
+
+        <div class="boxImage">
+            <a href="backend.html">
+                <img src="/img/backend.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> back-end developer role </h1>
+            </a>    
+        </div>
+
+        <div class="boxImage">
+            <a href="fullstack.html">
+                <img src="/img/fullstack.png" alt="top languages"> <br>
+                <h1 class="boxHeading"> fullstack developer role </h1>
+            </a>
+        </div>    
+
+    </div>
+    
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

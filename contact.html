@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- external links -->
+    <link rel="stylesheet" href="contact.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <title>Contact Details</title>
+    
+</head>
+<body>
+
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+    <div class="blank"></div>
+
+    <!-- form -->
+    <form action="#" method="GET" id="regd-form">
+
+        <!-- visiting card -->
+        <div class="vCard">
+            <div class="qrCode">
+                <img src="/img/aboutMe.png" alt="qr code">
+            </div>
+
+            <div class="myDetails">
+                <h3> Priyanka Sharma </h3>
+                <p class="para"> <a href="#"> CSE UG at BPUT </a>
+                </p>
+                <p class="mail"> E-mail: &nbsp <a href="#"> sharmapriyanka84510@gmail.com </a> </p>
+                <hr style="max-width: 200px;"> <br id="break">
+                <p class="mail"> Bhubaneswar, 751015 <br><br> Odisha ( INDIA )  </p>
+            </div>
+        </div>
+
+          <!-- form input -->
+        <div class="formInput">
+            <div>
+                <input type="text" name="fullName" placeholder="Full Name" required>
+            </div>
+
+            <div>
+                <input type="text" name="eMail" placeholder="Email" maxlength="15" required>
+            </div>
+
+            <div>
+                <input type="text" name="contact" placeholder="Conatct" maxlength="12" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit" id="button">
+            </div>
+        </div>
+    </form>
+
+    <div class="blank"></div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

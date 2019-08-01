@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Top Programming Languages </title>
+
+    <!-- external links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <style>
+        .paragraph a
+        {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2E9CCA;
+        }
+        .topProgLang
+        {
+            background-image: url("https://images.pexels.com/photos/34600/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media(max-width: 1049px)
+        {
+            .topProgLang
+            {
+                height: 380px;
+            }
+        }
+        @media(max-width: 750px)
+        {
+            .topProgLang
+            {
+                height: 280px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <!-- background image -->
+    <div class="topProgLang"></div>
+
+    <div class="description">
+        <!-- heading -->
+        <h1 class="heading">
+            frontend developer role
+        </h1>
+
+        <!-- briefly about web development -->
+        <p class="paragraph">
+            A front-end web developer is probably what most people think of as a “web developer”. A front-end web developer is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do. <br><br>
+            Writing a good job description and a corresponding job ad requires proper separation of concerns. Posting a generic web developer job description in your ad when you are looking for an advanced front-end web developer, will bring numerous applications from people who are specialized in building back-end web services, or web designers who have absolutely no knowledge about programming. <br><br>
+            There are technologies and knowledge that are common to all web developer jobs. This article will provide you with a sample front-end web developer job description that will help you write a perfect job ad and assure that you easily find and hire the person that matches your specific criteria.
+        </p>
+
+
+    </div>
+
+    <div class="blank"></div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

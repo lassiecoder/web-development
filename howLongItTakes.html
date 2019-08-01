@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Top Programming Languages </title>
+
+    <!-- external links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <style>
+        .paragraph a
+        {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2E9CCA;
+        }
+        .topProgLang
+        {
+            background-image: url("https://images.pexels.com/photos/373883/pexels-photo-373883.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media(max-width: 1049px)
+        {
+            .topProgLang
+            {
+                height: 380px;
+            }
+        }
+        @media(max-width: 750px)
+        {
+            .topProgLang
+            {
+                height: 280px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <!-- background image -->
+    <div class="topProgLang"></div>
+
+    <div class="description">
+        <!-- heading -->
+        <h1 class="heading">
+            how long it takes
+        </h1>
+
+        <!-- briefly about web development -->
+        <p class="paragraph">
+            While becoming a front-end web developer can be a brisk process, there are still a few steps involved. So what are the first steps and how long do they take? The absolute first step toward web development is to start learning two coding languages ASAP—HTML and CSS. HTML and CSS are markup languages used to define the parts of a web page (HTML) and determine the page’s fonts, colors and layout (CSS). These two skills will allow you to start building basic websites, and they’ll even qualify you to start doing paid HTML and CSS jobs (think freelance web development gigs for friends, family, or local businesses).
+            <br><br>
+            After getting experience with HTML and CSS, you can expand your development repertoire further with programming languages like JavaScript—a scripting language that controls dynamic website content (e.g. animated graphics and interactive maps). Learning JavaScript will add a few more months to your learning process, but knowing JavaScript will open up even more development jobs. Once you’ve nailed the basics of these front-end development skills the learning process will continue over the course of your development career, and there are always more skills to learn in order to stay professionally flexible and relevant—for instance if you’re interested in exploring back-end web development you’ll need to learn server side languages like Ruby on Rails—but the process of becoming a professionally viable front-end developer can realistically be achieved in a matter of months.
+            <br><br>
+            Code bootcamps are in-person coding schools that usually offer immersive 8-12 week long courses—which right off the bat answers questions about time. Bootcamp programs are designed to have students code-ready by the end of their prescribed length, so if you attend a 12-week course it should take you about 12 weeks to be ready for development work. This probably sounds better than spending two-to-four years getting a traditional degree, but code bootcamps aren’t without their own challenges. 
+            <br><br>
+            Finally, paid online coding classes are a middle ground between the expenses of a code bootcamp and the nebulous path of teaching yourself. Online coding schools give you the flexibility to learn from home and set your own pace, but you’ll still receive peer and instructor support while you learn. While online code schools usually don’t operate on exact time frames like in-person bootcamps, they still offer guidelines and structure that isn’t there if you try to teach yourself. For instance, the Skillcrush Break Into Tech Blueprint (covering HTML, CSS, and JavaScript, as well as web design skills, WordPress, and more) is designed to be completed in 9-12 months if students devote about an hour a day—which allows you to take more or less time to complete the program based on your unique situation and needs. The program is also designed for you to start freelancing while you’re still learning. This means building an entire tech toolkit (including moving past the basics) is still totally achievable in less than a year.
+        </p>
+
+
+    </div>
+
+    <div class="blank"></div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

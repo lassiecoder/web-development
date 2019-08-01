@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+        <!-- favicon -->
+        <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+        <style>
+        
+            .myImage
+            {
+                float: right;
+                width: 250px;
+                height: 250px;
+                border-radius: 10px;
+                border: 2px solid #2E9CCA;
+                margin-left: 120px;
+            }
+
+            .paragraph a
+            {
+                text-decoration: none;
+                font-weight: bold;
+                color: #2E9CCA;
+            }
+            /* media queries */
+            @media(max-width: 900px)
+            {
+                .intro img
+                {
+                    width: 200px;
+                    height: 200px;
+                    margin-left: 80px;
+                }
+            }
+
+            @media(max-width: 700px)
+            {
+                .intro img
+                {
+                    width: 180px;
+                    height: 180px;
+                    margin-left: 30px;
+                }
+            }
+
+            @media(max-width: 550px)
+            {
+                .intro img
+                {
+                    width: 150px;
+                    height: 150px;
+                    margin-left: 30px;
+                }
+            }
+
+            @media(max-width: 400px)
+            {
+                .intro img
+                {
+                    width: 100px;
+                    height: 100px;
+                    margin-left: 20px;
+                }
+            }
+
+        </style>
+
+    <title> About me </title>
+</head>
+<body>
+
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+    <div class="about">
+        <div class="intro">
+            <p class="paragraph">
+                <img src="/img/lassie.jpg" alt="myImage" class="myImage">
+
+                Hi! <br>
+                I am Priyanka Sharma.
+                I am final year student of Computer Science Engineering at <a href="http://bput.ac.in/" target="_blank"> BPUT </a>. <br>
+                I am self taught and passionate about <b> Web Development </b>. Currently I am learning Frontend Development and want to be a Full Stack Developer.
+                <br><br>
+                I started learning Web Development from the mid of 2018. During this time interval I have made some mini projects on <a href="https://github.com/lassiecoder"> GitHub </a> and <a href="https://codepen.io/lassiecoder/"> CodePen </a> as well. 
+                <br><br>
+                Currently I am using these Development Stack:
+                <br>
+                <b> <a href="#"> HTML5, CSS3, BOOTSTRAP4, JavaScript, PHP </a> </b>
+                <br><br>
+                Apart from that, In free time I write short stories and two liner poetries. You can find my contents on my <a href="https://www.instagram.com/_inner__me_/"> Instagram </a> profile.
+
+            </p>
+        </div>
+        <div class="blank" style="height: 300px;">
+
+        </div>
+
+    </div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

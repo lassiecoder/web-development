@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Top Programming Languages </title>
+
+    <!-- external links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <style>
+        .paragraph a
+        {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2E9CCA;
+        }
+        .topProgLang
+        {
+            background-image: url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media(max-width: 1049px)
+        {
+            .topProgLang
+            {
+                height: 380px;
+            }
+        }
+        @media(max-width: 750px)
+        {
+            .topProgLang
+            {
+                height: 280px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <!-- background image -->
+    <div class="topProgLang"></div>
+
+    <div class="description">
+        <!-- heading -->
+        <h1 class="heading">
+            fullstack developer role
+        </h1>
+
+        <!-- briefly about web development -->
+        <p class="paragraph">
+            Full Stack Developers are computer programmers who are proficient in both front and back end coding. Their primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms.
+            <br><br>
+            Full Stack Developer Responsibilities: <br>
+            <i>
+                1. Developing front end website architecture. <br>
+                2. Designing user interactions on web pages. <br>
+                3. Developing back end website applications. <br>
+                4. Creating servers and databases for functionality. <br>
+                5. Ensuring cross-platform optimization for mobile phones. <br>
+                6. Ensuring responsiveness of applications. <br>
+                7. Working alongside graphic designers for web design features. <br>
+                8. Seeing through a project from conception to finished product. <br>
+                9. Designing and developing APIs. <br>
+                10. Meeting both technical and consumer needs. <br>
+                11. Staying abreast of developments in web applications and programming languages.
+            </i>
+        </p>
+
+
+    </div>
+
+    <div class="blank"></div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

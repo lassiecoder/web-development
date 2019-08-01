@@ -1,0 +1,236 @@
+
+#regd-form
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+}
+
+.vCard
+{
+    background-color: #25274D;
+    color: white;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.formInput
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+}
+
+input[type=text]
+{
+    border: none;
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 36px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+}
+input:focus
+{
+    outline: none;
+    background-color: rgb(247, 247, 247);
+}
+
+#button
+{
+    background-color: #25274D;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#button:hover
+{
+  background-color: #2E9CCA;
+
+}
+
+.qrCode img
+{
+    width: 100px;
+    height: 100px;
+}
+
+.myDetails h3
+{
+    letter-spacing: 2px;
+}
+
+.para a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2E9CCA;
+    word-spacing: 3px;
+}
+
+.mail a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.blank
+{
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media(max-width: 1330px)
+{
+    .myDetails p
+    {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1255px)
+{
+    .myDetails p
+    {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 1220px)
+{
+    .vCard
+    {
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 
+    }
+    #regd-form
+    {
+        width: 80%;
+    }
+}
+
+@media(max-width: 940px)
+{
+    #regd-form
+    {
+        grid-template-columns: 1fr;
+    }
+    .vCard
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+    }
+    .myDetails
+    {
+        text-align: left;
+    }
+    .qrCode img
+    {
+        padding: 30px;
+        width: 150px;
+        height: 150px;
+    }
+    hr
+    {
+        float: left;
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 780px)
+{
+    .qrCode img
+    {
+        padding: 30px;
+        width: 120px;
+        height: 120px;
+    }
+    h3
+    {
+        font-size: 15px;
+    }
+    .para a, .mail 
+    {
+        font-size: 13px;
+    }
+    #button
+    {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+        font-size: 14px;
+    }
+    .formInput
+    {
+        padding-top: 150px;
+    }
+}
+
+@media(max-width: 680px)
+{
+    .vCard
+    {
+        grid-template-columns: 1fr;
+    }
+    .myDetails
+    {
+        text-align: center;
+    }
+    hr
+    {
+        display: none;
+    }
+    #break
+    {
+        display: none;
+    }
+}
+
+@media(max-width: 520px)
+{
+    .formInput
+    {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 70px;
+    }
+}

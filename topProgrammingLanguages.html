@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Top Programming Languages </title>
+
+    <!-- external links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <style>
+        .paragraph a
+        {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2E9CCA;
+        }
+        .topProgLang
+        {
+            background-image: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media(max-width: 1049px)
+        {
+            .topProgLang
+            {
+                height: 380px;
+            }
+        }
+        @media(max-width: 750px)
+        {
+            .topProgLang
+            {
+                height: 280px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <!-- background image -->
+    <div class="topProgLang"></div>
+
+    <div class="description">
+        <!-- heading -->
+        <h1 class="heading">
+            top programming languages
+        </h1>
+
+        <!-- briefly about web development -->
+        <p class="paragraph">
+            In the contemporary world of constant advancements in technology, computers have reached everywhere. Writing programs for computers is one of the most crucial work profiles in the current IT market.
+            <br><br>
+            A number of companies rely on web development companies for delivering the service of software development.
+            Every company has its own way of delivering their services. Therefore, as an aware client, you need to know which is the most suitable language as per your needs.
+            <br><br>
+            By reading the following descriptions, you can get a greater idea about languages in trend this year. Here is a list of top programming languages:
+            <br><br><br>
+            <a href="#"> JAVASCRIPT </a>
+            <br>
+            Javascript is no doubt the most trending language these days. It plays a chief role in front-end development. It can be used to develop interactive web pages very conveniently. Most of the full-stack software developers in the contemporary market prefer to use it.
+            Stack Overflow, a popular website which is mainly used by developers surveyed 100,000 developers in 2018 to find the most preferred language. Javascript topped the list, followed by HTML, CSS, SQL, and others.
+            This year too, it has been expected that Javascript will top the list again. The reason behind this popularity is probably its compatibility with all browsers. Moreover, it is also used in server-side through node.js.
+            <br><br><br>
+            <a href="#"> PYTHON </a>
+            <br>
+            Python has grown more than any other language in recent years. The major reason behind its growing popularity python is the rise of Artificial intelligence as well as the elimination of semicolon as an indication of the end of the statement. Python is one of the preferred languages for creating AI or machine learning based web & mobile apps. In many ways, it is similar and different from other programming languages.
+            It would not be wrong to say that the growth of data science has enhanced the development of python as a programming language. Moreover, Python is also replacing Javascript as a teaching language in institutes.
+            <br><br><br>
+            <a href="#"> JAVA </a>
+            <br>
+            This language has survived at the peak in the programming industry from the past 20 years. It is widely used for building enterprise scale web application. Android mobile app developersalso rely on this language for programming.
+            <br>
+            It is considered as one of the most stable languages. This is why it is the most preferred language by large enterprises. Another important factor which has kept its magic intact among web development companies is its independence from platforms.
+            <br>
+            It is known for high cross-platform compatibility. The Java Virtual Machine (JVM) allows it to run on various devices and platforms. Most of the fortune 500 companies use Java to develop back-end applications.
+            <br><br><br>
+            <a href="#"> PHP </a>
+            <br>
+            It stands for Hypertext Preprocessor and is a popular scripting language found in 1995. Newer languages could not make any difference to the popularity of PHP frameworks. This is mainly because it kept on evolving throughout these years.
+            <br>
+            It has over-the-top benefits like libraries and modules which assure dynamic software development. This is why most of the websites and content management systems are written in the PHP programming language. There are many PHP development companies, which use this language for creating enterprise grade web applications with varied complexity.
+            <br><br><br>
+            <a href="#"> SQL </a>
+            <br>
+            Out of 19 million developers in the world, 7 million are using SQL according to the Evans Data Corporation. You can get an idea about the immense popularity of this language from these statistics.
+            <br>
+            The chief reason behind this is its amazing feature of managing data structures and information stored in databases. SQL stands for Structured Query Language and allows faster retrieving of a large number of database records.
+            <br>
+            The secured functioning of this programming language assists in maintaining the integrity of databases. If you require proficient data management then choose a SQL developer for optimum outcomes.
+
+        </p>
+
+
+    </div>
+
+    <div class="blank"></div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

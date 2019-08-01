@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Top Programming Languages </title>
+
+    <!-- external links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <style>
+        .paragraph a
+        {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2E9CCA;
+        }
+        .topProgLang
+        {
+            background-image: url("https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media(max-width: 1049px)
+        {
+            .topProgLang
+            {
+                height: 380px;
+            }
+        }
+        @media(max-width: 750px)
+        {
+            .topProgLang
+            {
+                height: 280px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <!-- background image -->
+    <div class="topProgLang"></div>
+
+    <div class="description">
+        <!-- heading -->
+        <h1 class="heading">
+            why web development is important
+        </h1>
+
+        <!-- briefly about web development -->
+        <p class="paragraph">
+            If you really want to generate more business with a quality website. This may be the first line of communication between you and potential guests or visitors. The great advantage of website development company and website design company is that the website will be available 24 hours a day, 7 days a week and can be viewed from anywhere in the world. Therefore anyone can collect suitable information from the website at any time.
+            <br><br>
+            In today's business environment and to beat the competition large or small companies definitely need to develop a good website. Many business owners use the excuse that their business is "word-of-mouth" and they do not need a website. But a great way to reinforce the personal recommendations of other clients is through professional website development.
+            <br><br>
+            Web development services help your company to increase product knowledge, maintain communication between you and potential clients, sell your products or services, generate leads for the business, and increase the popularity of your company and much more.
+            <br><br>
+            When you decide that it is important and in the best interest of your business to have a website, there a few important things you should consider for your web design and development.
+            <br>
+            <i>
+                1. Firstly, you need to consider the cost it will take to have your web design and development. The cost should be expensive or cheap, this is up to you. If you hire out it will be costly, or if you try to learn yourself it can be time consuming. <br>
+                2. Secondly, it is important that you take your time to learn about web design and development. <br>
+                3. Thirdly, you are going to need tools to build a website. With the proper tools and know how, it shouldn't be too hard for you to construct a good website. <br>
+                4. Fourth, knowledge is power when it comes to web design and development. Take the necessary time to do some research and find out what is best for you. Remember, you can always outsource this project to web designers, but it will be costly!
+            </i>
+        </p>
+
+
+    </div>
+
+    <div class="blank"></div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>

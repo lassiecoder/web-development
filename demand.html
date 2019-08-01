@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Top Programming Languages </title>
+
+    <!-- external links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <style>
+        .paragraph a
+        {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2E9CCA;
+        }
+        .topProgLang
+        {
+            background-image: url("https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media(max-width: 1049px)
+        {
+            .topProgLang
+            {
+                height: 380px;
+            }
+        }
+        @media(max-width: 750px)
+        {
+            .topProgLang
+            {
+                height: 280px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   
+    <!-- including header.html -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    
+    <!-- background image -->
+    <div class="topProgLang"></div>
+
+    <div class="description">
+        <!-- heading -->
+        <h1 class="heading">
+            Demand of Web Development
+        </h1>
+
+        <!-- briefly about web development -->
+        <p class="paragraph">
+            For front-end web developers creativity is key. You'll be able to create first-class user experiences and charming websites. Plus, if you work for a startup, you'll get much more creative rein.
+            <br><br>
+            If you'd rather stick to just the one thing, web development is great for those wanting to become an expert.
+            Specialising is a way to become the best at what you most enjoy. Whether it's JavaScript, CSS or HTML a career in web development allows you to focus on areas you enjoy and excel at, essentially becoming a leader in your field.
+            <br><br>
+            Full stack developers are among the most in-demand by employers right now in terms of open job postings, according to data from job search site Indeed. <br>
+            "Some companies are moving away from siloed back-end and front-end development teams, which requires hiring developers who can work on all levels of the application stack," said Paul Wallenberg, head of technology recruiting services at staffing and recruiting firm LaSalle Network.
+            <br><br>
+            There's no need to be tied into one particular area. Web development comes with loads of transferable skills, ideal for other disciplines.
+            Take the mobile sector, for example, web developers can easily transition to mobile development. With similar interfaces, creating mobile applications can access a different market while also making developers much more attractive to potential employers.
+            <br><br>
+            The rise of AI and machine learning technologies has led to increased demand for Python developers in the enterprise, Zafarino said. The fastest-growing programming language, Python is also relatively easy to learn, and has a large developer community.
+            <br><br>
+            Java developers will remain in high demand in 2019, according to data from Indeed and Glassdoor. Despite the growth of programming languages like Python and R, Java continues to dominate the enterprise, with the growth of the cloud keeping it on top.
+            <br><br>
+            JavaScript also remains popular in the enterprise, and will continue to in the new year. "Companies that have development teams structured between front-end and back-end teams are hiring technologists whose strengths lie in using various JavaScript libraries and frameworks to deliver more compelling user interfaces," Wallenberg said.
+            <br><br>
+            Web development combines creativity and analytical skills perfectly. It's for the detail orientated and those with an eye for design. 
+            <br>
+
+        </p>
+
+
+    </div>
+
+    <div class="blank"></div>
+
+    <!-- including footer.html -->
+    <div id="2"></div>
+    <script>
+        load("footer.html");
+
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>
